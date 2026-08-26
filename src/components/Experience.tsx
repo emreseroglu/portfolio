@@ -3,6 +3,14 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      title: "Information Technology Intern",
+      company: "Provincial Directorate of Agriculture and Forestry",
+      location: "Diyarbakır, Turkey",
+      period: "Jul 2026 – Aug 2026",
+      description: "Configured and deployed end-user workstations by executing OS installations and integrating systems into the corporate domain. Delivered rapid IT support for a ~1,500-employee organization, minimizing downtime by diagnosing and repairing hardware faults, printers, and network connectivity issues.",
+      technologies: ["OS Deployment", "Domain Integration", "Hardware Troubleshooting", "Network Troubleshooting"]
+    },
+    {
       title: "Automotive Tuning Trainee",
       company: "Ecumasters Düzce",
       location: "Düzce, Turkey",
