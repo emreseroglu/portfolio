@@ -74,7 +74,7 @@ const Hero = () => {
         {/* Social links */}
         <div className="flex gap-4 justify-center fade-up fade-up-delay-4">
           <a 
-            href="https://github.com/Ayrton-Senna12" 
+            href="https://github.com/emreseroglu" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 glass-card hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"

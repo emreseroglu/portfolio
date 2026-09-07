@@ -52,7 +52,7 @@ const Contact = () => {
           {/* Social links */}
           <div className="flex justify-center gap-4">
             <a
-              href="https://github.com/Ayrton-Senna12"
+              href="https://github.com/emreseroglu"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 glass-card hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"

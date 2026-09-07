@@ -7,7 +7,7 @@ const Projects = () => {
       title: "ChatGPD",
       description: "ChatGPD is an AI-powered chat application built with Streamlit that uses Google Gemini models and real-time web search. It can research topics online and provide up-to-date answers through an interactive chat interface.",
       tags: ["Python", "Streamlit", "Google Gemini", "Real-time Web Search"],
-      github: "https://github.com/Ayrton-Senna12/ChatGPD",
+      github: "https://github.com/emreseroglu/ChatGPD",
       // demo: "#", // TODO: Add demo link when available
       featured: true
     },
@@ -15,7 +15,7 @@ const Projects = () => {
       title: "Chat-With-PDF",
       description: "Built a RAG-based application using Google Gemini and LangChain to enable interactive, natural language queries on PDF documents. Implemented an in-memory FAISS vector store to deliver instant, accurate responses with source citations.",
       tags: ["Python", "Streamlit", "LangChain", "RAG"],
-      github: "https://github.com/Ayrton-Senna12/Chat-With-PDF",
+      github: "https://github.com/emreseroglu/Chat-With-PDF",
       // demo: "#", // TODO: Add demo link when available
       featured: true
     },
@@ -23,7 +23,7 @@ const Projects = () => {
       title: "TourismWebsite",
       description: "Developed a user-friendly tourism platform that allows travelers to seamlessy explore destinations and manage bookings. Designed a responsive interface with a focus on intuitive UI/UX to ensure an engaging experience across all devices.",
       tags: ["C#", "ASP.NET", "Bootstrap", "MVCArchitecture"],
-      github: "https://github.com/Ayrton-Senna12/TourismWebsite",
+      github: "https://github.com/emreseroglu/TourismWebsite",
       // demo: "#", // TODO: Add demo link when available
       featured: true
     },
@@ -31,21 +31,21 @@ const Projects = () => {
       title: "Digit-Recognitions",
       description: "Built a machine learning model designed to accurately recognize and classify handwritten digits using computer vision techniques. Trained and optimized the algorithm on the MNIST dataset to achieve high accuracy in image processing and pattern recognition tasks.",
       tags: ["Python", "TensorFlow", "Keras", "Computer Vision"],
-      github: "https://github.com/Ayrton-Senna12/Digit-Recognitions",
+      github: "https://github.com/emreseroglu/Digit-Recognitions",
       featured: false
     },
     {
       title: "GYMManagement",
       description: "GYMManagement is a gym database management system built with C# and MSSQL that helps administrators handle member, trainer, class, and equipment information efficiently. It provides a user-friendly interface with essential functionality like login, payments, and detailed views of gym operations.",
       tags: ["C#", "MSSQL", "CRUD-Application"],
-      github: "https://github.com/Ayrton-Senna12/GYMManagement",
+      github: "https://github.com/emreseroglu/GYMManagement",
       featured: false
     },
     {
       title: "Agirlik_Sensoru",
       description: "This project demonstrates a weight sensor system built using an HX711 module and a load cell. The setup includes an Arduino interface and a Nextion LCD display for real-time weight measurement and calibration controls.",
       tags: ["Arduino", "HX711", "Nextion LCD"],
-      github: "https://github.com/Ayrton-Senna12/Agirlik_Sensoru",
+      github: "https://github.com/emreseroglu/Agirlik_Sensoru",
       // demo: "#", // TODO: Add demo link when available
       featured: false
     }
@@ -179,7 +179,7 @@ const Projects = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <a href="https://github.com/Ayrton-Senna12?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/emreseroglu?tab=repositories" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="lg" className="border-border hover:bg-secondary">
               <Github className="mr-2 h-5 w-5" />
               View More on GitHub
