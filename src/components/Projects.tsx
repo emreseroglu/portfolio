@@ -1,14 +1,29 @@
 import { ExternalLink, Github, Folder } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+type Project = {
+  title: string;
+  description: string;
+  tags: string[];
+  github?: string;
+  playStore?: string;
+  featured: boolean;
+};
+
 const Projects = () => {
-  const projects = [
+  const projects: Project[] = [
     {
-      title: "ChatGPD",
-      description: "ChatGPD is an AI-powered chat application built with Streamlit that uses Google Gemini models and real-time web search. It can research topics online and provide up-to-date answers through an interactive chat interface.",
-      tags: ["Python", "Streamlit", "Google Gemini", "Real-time Web Search"],
-      github: "https://github.com/emreseroglu/ChatGPD",
-      // demo: "#", // TODO: Add demo link when available
+      title: "BoomBlastic",
+      description: "A gem-themed block puzzle game published on Google Play. Features an endless Classic mode, 200 handcrafted Adventure levels, live 1v1 duels against real players, unlockable themes and Google Play Games leaderboards, with offline play support.",
+      tags: ["Flutter", "Dart", "Firebase", "Real-time 1v1", "Google Play Games"],
+      playStore: "https://play.google.com/store/apps/details?id=com.esetech.boomblastic",
+      featured: true
+    },
+    {
+      title: "Albumium",
+      description: "A photo & memories app on Google Play for designing personalized digital albums and greeting cards. Users can arrange and decorate photos with text, drawings and frames, flip through albums in book mode, and export them as video, with no account required.",
+      tags: ["Flutter", "Dart", "Photo Editing", "Offline-first"],
+      playStore: "https://play.google.com/store/apps/details?id=com.albumium.albumium",
       featured: true
     },
     {
@@ -20,12 +35,18 @@ const Projects = () => {
       featured: true
     },
     {
+      title: "ChatGPD",
+      description: "ChatGPD is an AI-powered chat application built with Streamlit that uses Google Gemini models and real-time web search. It can research topics online and provide up-to-date answers through an interactive chat interface.",
+      tags: ["Python", "Streamlit", "Google Gemini", "Real-time Web Search"],
+      github: "https://github.com/emreseroglu/ChatGPD",
+      featured: false
+    },
+    {
       title: "TourismWebsite",
-      description: "Developed a user-friendly tourism platform that allows travelers to seamlessy explore destinations and manage bookings. Designed a responsive interface with a focus on intuitive UI/UX to ensure an engaging experience across all devices.",
+      description: "Developed a user-friendly tourism platform that allows travelers to seamlessly explore destinations and manage bookings. Designed a responsive interface with a focus on intuitive UI/UX to ensure an engaging experience across all devices.",
       tags: ["C#", "ASP.NET", "Bootstrap", "MVCArchitecture"],
       github: "https://github.com/emreseroglu/TourismWebsite",
-      // demo: "#", // TODO: Add demo link when available
-      featured: true
+      featured: false
     },
     {
       title: "Digit-Recognitions",
@@ -79,14 +100,28 @@ const Projects = () => {
               <div className="flex items-center justify-between mb-4">
                 <Folder className="h-10 w-10 text-primary" />
                 <div className="flex gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <Github className="h-5 w-5" />
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${project.title} on GitHub`}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <Github className="h-5 w-5" />
+                    </a>
+                  )}
+                  {project.playStore && (
+                    <a
+                      href={project.playStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${project.title} on Google Play`}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <ExternalLink className="h-5 w-5" />
+                    </a>
+                  )}
                   {/* TODO: Uncomment when demo links are available
                   {project.demo && (
                     <a

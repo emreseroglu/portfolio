@@ -42,16 +42,20 @@ const About = () => {
           {/* Text content */}
           <div className="space-y-4 md:space-y-6">
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            I'm a software engineering student with a strong passion for building meaningful 
-            and well-structured digital products. I have hands-on experience across 
-            both frontend and backend development, and I enjoy turning complex problems into clean, efficient, 
+            I'm a recent software engineering graduate with a strong passion for building meaningful
+            and well-structured digital products. I have hands-on experience across
+            both frontend and backend development, and I enjoy turning complex problems into clean, efficient,
             and user-friendly solutions.
             </p>
-            
+
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             My main interests include backend systems, artificial intelligence, and data-driven applications.
-            I'm constantly learning new technologies, improving my problem-solving skills, 
+            I'm constantly learning new technologies, improving my problem-solving skills,
             and working on projects that push my technical limits.
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+            On the side, I develop and publish my own mobile apps on Google Play, taking them
+            from idea to release on my own.
             </p>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               When I'm not coding, you'll find me exploring new technologies, 

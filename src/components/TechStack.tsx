@@ -4,7 +4,7 @@ const TechStack = () => {
     { name: "Python", category: "Language" },
     { name: "Java", category: "Language" },
     { name: "C#", category: "Language" },
-    { name: "TypeScript", category: "Language" },
+    { name: "Flutter", category: "Mobile" },
     { name: "Node.js", category: "Backend" },
     { name: "React", category: "Frontend" },
     { name: "Postman", category: "Framework" },
@@ -54,7 +54,7 @@ const TechStack = () => {
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">Also experienced with:</p>
           <div className="flex flex-wrap justify-center gap-2">
-            {["REST APIs", "CI/CD", "Kubernetes", "Flutter", "Figma", "Agile"].map((skill) => (
+            {["REST APIs", "CI/CD", "Kubernetes", "TypeScript", "Figma", "Agile"].map((skill) => (
               <span key={skill} className="px-3 py-1 text-sm bg-secondary rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                 {skill}
               </span>
@@ -69,7 +69,7 @@ const TechStack = () => {
 const getEmojiForTech = (name: string): string => {
   const emojiMap: Record<string, string> = {
     "React": "⚛️",
-    "TypeScript": "📘",
+    "Flutter": "💙",
     "Node.js": "💚",
     "Python": "🐍",
     "PostgreSQL": "🐘",
